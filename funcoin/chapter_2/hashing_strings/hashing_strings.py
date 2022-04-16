@@ -1,7 +1,7 @@
 import hashlib
 
 # Hash functions expect bytes as input: the encode() method turns strings to bytes
-input_bytes = b"backpack"
+input_bytes = b"backpack"   # changing even one character will produce a completely new hash = avalanche property: minor changes in input yield large changes in output
 
 output = hashlib.sha256(input_bytes)
 
